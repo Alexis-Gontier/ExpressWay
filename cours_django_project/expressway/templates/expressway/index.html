@@ -1,0 +1,34 @@
+{% extends "expressway/base.html" %}
+
+{% block content %}
+
+    <h1>Voici le tableau des départs</h1>
+
+
+    <!-- TABLEAU DES DEPARTS -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col">N°</th>
+                <th scope="col">Heure</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Voie</th>
+                <th scope="col">Allez voir</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in trains %}
+            <tr>
+                    <td>{{ i.type }}</td>
+                    <td>{{ i.n }}</td>
+                    <td>{{ i.heure }}</td>
+                    <td>{{ i.destination }}</td>
+                    <td>{{ i.voie }}</td>
+                    <td><a href="/show/{{ i.trainID }}"><i class="fa-solid fa-eye"></i></a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

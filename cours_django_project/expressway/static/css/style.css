@@ -1,0 +1,339 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+
+/* VARIABLES CSS */
+:root {
+    --background-color: #070720;
+    --color: #fff;
+    --font-family: "Inter", sans-serif;
+    --nav-background: #0d0d28;
+    --nav-color: #5c5c8e;
+}
+
+/* BASE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: width .3s ease-in-out;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    /* font-size: ; */
+    background-color: var(--background-color);
+    color: var(--color);
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Largeur et couleur de la piste */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #191937;
+    border-radius: 1rem;
+}
+
+/* Couleur du pouce */
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #606092;
+}
+
+/* Hover effet sur le pouce */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #cddcfe;
+}
+
+/* ============================ HEADER ============================ */
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 250px; */
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--nav-background);
+    box-shadow: 2px 0 4px rgba(0,0,0,.25);
+    transition: width .3s ease-in-out;
+
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    transition: width .3s ease-in-out;
+}
+
+header nav .nav-top,
+header nav .nav-bot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+}
+
+header nav .line {
+    width: 100%;
+    height: 1px;
+    background-color: #191937;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .5rem;
+}
+
+header nav a:hover {
+    background-color: #070720;
+}
+
+header nav .logo {
+    gap: 0.5rem;
+    padding: .5rem;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.7rem;
+}
+
+header nav .logo:hover {
+    background-color: unset;
+}
+
+header nav a img {
+    width: 40px;
+}
+
+header nav a span {
+    display: none;
+}
+
+/* ============================ MAIN ============================ */
+
+main {
+    padding-left: 100px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+
+/* search */
+main .search {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #191937;
+}
+
+main .search input {
+    margin: 1.25rem;
+    padding: .75rem;
+    width: 500px;
+    outline: 0;
+    border: none;
+    background-color: #0d0d28;
+    color: #a9acd1;
+    border-radius: .25rem;
+}
+
+main .search input::placeholder {
+    color: #a9acd1;
+}
+
+main h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+/* ============================ INDEX ============================ */
+/* Tableau trains */
+table {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #191937;
+    color: #cddcfe;
+    padding: 1rem;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    border-spacing: 0;
+}
+
+table thead {
+    position: sticky;
+    top: 80px;
+    background-color: #191937;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #11112a;
+    border-radius: 4px;
+}
+
+table th {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+table td {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+table td:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+table td:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+table td a:hover {
+    color: #fff;
+}
+
+/* ============================ SHOW/ID ============================ */
+
+.container {
+    width: 1032px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.cards img {
+    width: 80%;
+}
+
+.cards div {
+    position: relative;
+    width: 100%;
+    /* height: 252px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #191937;
+    border-radius: 8px;
+}
+
+.cards div .top {
+    position: absolute;
+    top: 20px;
+    color: #cddcfe;
+}
+
+.cards div p:last-child {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card1 {
+    grid-area: 1 / 1 / 2 / 2;
+    
+}
+
+.card2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.card3 {
+    grid-area: 1 / 2 / 3 / 4;
+    height: 504px;
+}
+
+.card4 {
+    grid-area: 1 / 4 / 2 / 5; 
+}
+
+.card5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btns a {
+    background-color: #191937;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.btns a:hover {
+    background-color: #0d0d28;
+}

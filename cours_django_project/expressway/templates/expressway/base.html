@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressWay</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <nav>
+            <div class="nav-top">
+                <a href="{% url 'index' %}" class="logo"><img src="{% static 'img/favicon.png' %}" alt=""><span>ExpressWay</span></a>
+                <div class="line"></div>
+                <a href="{% url 'index' %}"><i class="fa-solid fa-house-user"></i> <span>Home</span></a>
+                <a href="{% url 'show' %}"><i class="fa-solid fa-eye"></i> <span>Show</span></a>
+                <a href="{% url 'random' %}"><i class="fa-solid fa-shuffle"></i> <span>Random</span></a>
+            </div>
+
+            <div class="nav-bot">
+                <div class="line"></div>
+                <a href="{% url 'addTrain' %}"><i class="fa-solid fa-plus"></i> <span>Add Train</span></a>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <!-- MAIN -->
+    
+    <main>
+
+        <!-- BARRE DE RECHERCHE -->
+        <div class="search">
+            <input type="search" name="" id="" placeholder="Search">
+        </div>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+
+
+    </footer>
+
+</body>
+<script src="{% static 'js/script.js' %}"></script>
+</html>

@@ -1,0 +1,44 @@
+{% extends "expressway/base.html" %}
+
+{% block content %}
+
+
+
+    <div class="container">
+
+        <h2>Details de votre train :</h2>
+
+        <div class="cards">
+
+            <div class="card1"><p class="top">Destination :</p><p>{{ destination }}</p></div>
+            <div class="card2"><p class="top">N°</p><p>{{ n }}</p></div>
+            <div class="card3"><img src="../../static/img/{{ type }}.png" alt=""></div>
+            <div class="card4"><p class="top">Départ :</p><p>{{ heure }}</p></div>
+            <div class="card5"><p class="top">Voie</p><p>{{ voie }}</p></div>
+
+        </div>
+
+        <div class="btns">
+            <a href="/show/{{ precedent }}">Précédent</a>
+            <a href="/">Accueil</a>
+            <a href="/show/{{ suivant }}">Suivant</a>
+        </div>
+
+    </div>
+
+
+
+
+<!-- 
+    <p> {{ n }} </p>
+    <p> {{ type }} </p>
+    <p> {{ destination }} </p>
+
+    <div style="height : 50px; "></div>
+    <a href="/show/{{ precedent }}"> Précédent </a>
+    <a href="/show/{{ suivant }}"> Suivant </a>
+    <a href="/"> Accueil </a> -->
+
+{% endblock %}
+
+
