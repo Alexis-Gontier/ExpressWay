@@ -16,5 +16,4 @@ Concevoir un site web en django en présentant des trains, un plan de la ligne e
 
 
 ## 🙇 Auteur
-#### Arnaud Fischer
 - Github: [@Alexis-G](https://github.com/Alexis-Gontier)
