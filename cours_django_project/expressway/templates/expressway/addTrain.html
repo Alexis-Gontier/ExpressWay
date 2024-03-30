@@ -1,0 +1,12 @@
+{% extends "expressway/base.html" %}
+
+{% block content %}
+
+    <form method="post" class="addtrain">
+        <h2>Create a New Train</h2>
+        {% csrf_token %}
+        {{ form.as_div }}
+        <button type="submit">envoyer</button>
+    </form>
+
+{% endblock %}

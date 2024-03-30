@@ -337,3 +337,65 @@ table td a:hover {
 .btns a:hover {
     background-color: #0d0d28;
 }
+
+/* ============================ ADD TRAIN ============================ */
+
+.addtrain {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #11112a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.addtrain h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.addtrain div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.addtrain div label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.addtrain div input {
+    height: 40px;
+    background-color: #191937;
+    outline: 0;
+    border: none;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.addtrain button {
+    /* height: 40px; */
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    background-color: #070720;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.addtrain button:hover {
+    background-color: rgb(17, 17, 53);
+    color: #d4d4d4;
+}
+
+.addtrain div  input[type=text]:focus {
+    border: 2px solid #070720;
+}
