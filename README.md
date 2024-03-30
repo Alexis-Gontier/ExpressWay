@@ -6,7 +6,6 @@
   
 Concevoir un site web en django en présentant des trains, un plan de la ligne etc...
 
-## Objectif :
 - Une page Acceuil/Tableau de bord qui montre les différents train et leur horraires.
 - Une page détails avec les informaton sur le train
 - Une page random qui affiche un train aléatoir
