@@ -3,12 +3,14 @@ let header = document.querySelector('header');
 let links = document.querySelectorAll('header nav a span');
 
 header.addEventListener('mouseover', () => {
+
     links.forEach(link => {
         link.style.display = 'block';
     });
 });
 
 header.addEventListener('mouseout', () => {
+
     links.forEach(link => {
         link.style.display = 'none';
     });
@@ -25,8 +27,8 @@ form.addEventListener('submit', (event) => {
     let valeur = document.querySelector('#search_bar').value;
 
     if (!isNaN(valeur)) {
-        window.location.href = 'show/' + valeur;
+        window.location.href = '../show/' + valeur;
     } else {
-        alert("Veuillez entrer un nombre valide.");
+        alert("Veuillez entrer l'id (ex: 4)");
     }
 });

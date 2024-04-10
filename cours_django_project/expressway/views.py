@@ -11,9 +11,6 @@ def index(request):
         "trains": allTrains
     })
 
-def show(request):
-    return render(request, "expressway/show.html", {})
-
 def show_id(request, id_train):
     myTrain = Trains.objects.get(trainID=id_train)
     allTrains = Trains.objects.all()

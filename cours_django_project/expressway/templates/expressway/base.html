@@ -21,7 +21,6 @@
                 <a href="{% url 'index' %}" class="logo"><img src="{% static 'img/favicon.png' %}" alt=""><span>ExpressWay</span></a>
                 <div class="line"></div>
                 <a href="{% url 'index' %}"><i class="fa-solid fa-house-user"></i> <span>Home</span></a>
-                <a href="{% url 'show' %}"><i class="fa-solid fa-eye"></i> <span>Show</span></a>
                 <a href="{% url 'aleatoir' %}"><i class="fa-solid fa-shuffle"></i> <span>Random</span></a>
             </div>
 
@@ -40,7 +39,7 @@
 
         <!-- BARRE DE RECHERCHE -->
         <form id="search">
-            <input type="text" name="" id="search_bar" placeholder="Search">
+            <input type="text" name="" id="search_bar" placeholder="taper le l'id de votre train !">
         </form>
         {% block content %}
 
