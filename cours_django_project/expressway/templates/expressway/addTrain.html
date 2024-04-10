@@ -3,7 +3,7 @@
 {% block content %}
 
     <form method="post" class="addtrain">
-        <h2>Create a New Train</h2>
+        <h2>Créer ton nouveau train</h2>
         {% csrf_token %}
         {{ form.as_div }}
         <button type="submit">envoyer</button>
