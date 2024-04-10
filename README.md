@@ -1,6 +1,10 @@
 
 # <p align="center">Django - Projet Train</p>
-  
+
+
+## Admin :
+login : algont
+mdp : azerty
 
 # <p align="left">Objectif</p>
   
