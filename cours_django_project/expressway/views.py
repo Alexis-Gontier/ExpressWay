@@ -7,7 +7,7 @@ def index(request):
     allTrains = Trains.objects.all()
 
     return render(request, "expressway/index.html", {
-
+        # AFFICHAGE DE TOUT LES TRAINS
         "trains": allTrains
     })
 
@@ -48,6 +48,7 @@ def aleatoir(request):
         "voie": random_train.voie,
     })
 
+# FORMULAIRE D'AJOUT DE TRAIN
 def addTrain(request):
     if request.method == 'POST':
         form = TrainsForm(request.POST)
