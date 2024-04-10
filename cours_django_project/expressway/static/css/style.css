@@ -78,8 +78,7 @@ header {
     padding: 1rem;
     background-color: var(--nav-background);
     box-shadow: 2px 0 4px rgba(0,0,0,.25);
-    transition: width .3s ease-in-out;
-
+    transition: .3s ease-in-out;
 }
 
 header nav {
@@ -157,7 +156,7 @@ main {
 }
 
 /* search */
-main .search {
+main #search {
     z-index: 10;
     position: fixed;
     top: 0;
@@ -170,7 +169,7 @@ main .search {
     border: 1px solid #191937;
 }
 
-main .search input {
+main #search input {
     margin: 1.25rem;
     padding: .75rem;
     width: 500px;
@@ -181,7 +180,7 @@ main .search input {
     border-radius: .25rem;
 }
 
-main .search input::placeholder {
+main #search input::placeholder {
     color: #a9acd1;
 }
 
